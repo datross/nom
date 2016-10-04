@@ -18,6 +18,8 @@
               "Synthé 440"@fr ;
     # Link to license
     doap:license <https://www.gnu.org/licenses/quick-guide-gplv3.en.html> ;
+    # hardRTCapable = Real Time Capable
+    lv2:optionalFeature lv2:hardRTCapable ;
     # Its ports
     lv2:port [
         a lv2:OuputPort ,
