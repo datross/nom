@@ -28,5 +28,5 @@
 *.out
 *.app
 
-# Binary output
-synth
+# Build directory
+nom.lv2
