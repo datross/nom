@@ -1,0 +1,28 @@
+
+# Turtle really is an ugly language
+# Those are basically defines for URIs
+@prefix doap:  <http://usefulinc.com/ns/doap#> .
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix units: <http://lv2plug.in/ns/extensions/units#> .
+
+# Starting the definition of the plugin
+<http://github.com/datross/nom>
+    # Its type
+    a lv2:Plugin ;
+    # A link to the github
+    lv2:project <https://github.com/datross/nom>
+    # Its name
+    doap:name "The 440 Synth",
+              "Synthé 440"@fr ;
+    # Link to license
+    doap:license <https://www.gnu.org/licenses/quick-guide-gplv3.en.html> ;
+    # Its ports
+    lv2:port [
+        a lv2:OuputPort ,
+            lv2:AudioPort ;
+        lv2:index 0 ;
+        lv2:symbol "out" ;
+        lv2:name "Out" ;
+    ] .
