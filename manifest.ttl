@@ -4,5 +4,5 @@
 
 <http://github.com/datross/nom>
     a lv2:Plugin ;
-    lv2:binary <amp@LIB_EXT@> ;
-    rdfs:seeAlso <amp.ttl> .
+    lv2:binary <nom@LIB_EXT@> ;
+    rdfs:seeAlso <nom.ttl> .
