@@ -14,16 +14,15 @@
     # A link to the github
     lv2:project <https://github.com/datross/nom>
     # Its name
-    doap:name "The 440 Synth",
-              "Synthé 440"@fr ;
+    doap:name "The 440 Synth" ;
     # Link to license
     doap:license <https://www.gnu.org/licenses/quick-guide-gplv3.en.html> ;
     # hardRTCapable = Real Time Capable
     lv2:optionalFeature lv2:hardRTCapable ;
     # Its ports
     lv2:port [
-        a lv2:OuputPort ,
-            lv2:AudioPort ;
+        a lv2:AudioPort ,
+            lv2:OutputPort ;
         lv2:index 0 ;
         lv2:symbol "out" ;
         lv2:name "Out"
