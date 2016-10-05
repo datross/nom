@@ -51,6 +51,7 @@ static void run(LV2_Handle instance, uint32_t n_samples)
     const Synth * synth = (const Synth*)instance;
     for(uint32_t pos = 0; pos < n_samples; pos++)
     {
+        // Not actually 440Hz, need to find the correct calculation
         synth->output[pos] = sin(pos);
     }
 }
